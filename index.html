@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome!</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="body">
+    <header>
+      <ul class="nav justify-content-end fixed-top" id="nav">
+        <li class="nav-item">
+          <a class="nav-link lg-view" href="#home">Home</a>
+          <a class="nav-link sm-view" href="#home"
+            ><i class="fas fa-home"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link lg-view" href="#about">About</a>
+          <a class="nav-link sm-view" href="#about"
+            ><i class="far fa-question-circle"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link lg-view" href="#skills">Skills</a>
+          <a class="nav-link sm-view" href="#skills"
+            ><i class="far fa-lightbulb"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link lg-view" href="#exp">Experience</a>
+          <a class="nav-link sm-view" href="#exp"
+            ><i class="fas fa-briefcase"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link lg-view" href="#portfolio">Portfolio</a>
+          <a class="nav-link sm-view" href="#portfolio"
+            ><i class="fas fa-atlas"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link lg-view" href="#contact">Contact</a>
+          <a class="nav-link sm-view" href="#contact"
+            ><i class="far fa-user"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="darkToggle" onclick="darkToggle()"
+            ><i class="fas fa-toggle-off moon" id="moon"></i
+          ></a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fas fa-angle-double-up"></i>
+      </button>
+      <section id="home">
+        <div class="container homeMain">
+          <div class="row homeMainRow">
+            <div class="col-lg-6 homeMainText">
+              <h1 class="myName">Hi, I'm Tomi.</h1>
+              <p class="myJob">Business Intelligence Analyst.</p>
+              <p class="myDescription">
+                I like web design and development. I started studying computer
+                science since 2017 and I was always interested in programming.
+              </p>
+              <a class="mainContactBtn" href="#contact"
+                >Contact Me <i class="fas fa-chevron-right"></i
+              ></a>
+            </div>
+            <div class="col-lg-6">
+              <img class="profilePic" src="img/profile1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <br /><br /><br />
+      <div class="container divLine">
+        <div class="row">
+          <div class="col-lg-12">
+            <hr />
+          </div>
+        </div>
+      </div>
+      <br /><br /><br />
+
+      <!-- ---------------- XXX - ABOUT - XXX. ---------------- -->
+
+      <section id="about">
+        <div class="container aboutMain">
+          <div class="row aboutMainRow">
+            <div class="col-12 col-sm-12 col-lg-6">
+              <img class="aboutPic" src="img/profile4.jpg" alt="" />
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 aboutMainText">
+              <h1 class="secTitle">About me</h1>
+              <p class="aboutDescription">
+                Born in
+                <a
+                  class="myLocation"
+                  href="https://goo.gl/maps/wapyckvbH2wDPFfv6"
+                  target="_blank"
+                  >Buenos Aires, Argentina</a
+                >
+                . I work for a multinational company and in my free time I like
+                to learn new things like programming, music and design.
+              </p>
+              <div class="row aboutSummaryRow">
+                <div class="col-4 summaryCol">
+                  <h3 class="summaryHead">22</h3>
+                  <p class="summaryText">years old</p>
+                </div>
+                <div class="col-4 summaryCol">
+                  <h3 class="summaryHead">4+</h3>
+                  <p class="summaryText">years of work experience</p>
+                </div>
+                <div class="col-4 summaryCol">
+                  <h3 class="summaryHead">1</h3>
+                  <p class="summaryText">fully completed project</p>
+                </div>
+              </div>
+              <div class="row cvRow dropdown">
+                <a
+                  class="dlcv dropdown-toggle"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Download CV
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://drive.google.com/file/d/11cC_xzjXfo09hnMwQiXdx0cMSkTzDPAv/view?usp=sharing"
+                      download="Tomás Torino CV_EN"
+                      target="_blank"
+                      >English</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://drive.google.com/file/d/1yD_0HxA9NPfeHWwdPj4VfNMNPybX4yni/view?usp=sharing"
+                      download="Tomás Torino CV_ES"
+                      target="_blank"
+                      >Spanish</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br /><br /><br />
+      <div class="container divLine">
+        <div class="row">
+          <div class="col-lg-12">
+            <hr />
+          </div>
+        </div>
+      </div>
+      <br /><br /><br />
+
+      <!-- ---------------- XXX - SKILLS - XXX. ---------------- -->
+
+      <section id="skills">
+        <div class="container skillsMain">
+          <div class="row mainSkills">
+            <div class="col-12">
+              <h2 class="skillsMainTitle">Skills</h2>
+              <br />
+              <h4>Programming</h4>
+            </div>
+          </div>
+          <div class="row justify-content-center skillMain">
+            <div class="col-lg-4 col-sm-12">
+              <button
+                type="button"
+                class="modalBtn"
+                data-bs-toggle="modal"
+                data-bs-target="#htmlModal"
+              >
+                <div class="container">
+                  <div class="row skill">
+                    <div class="col-3 skillLogo">
+                      <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="col-9 skillData">
+                      <div class="row">
+                        <div class="col-12 skillName">HTML</div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 skillStar">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <button
+                type="button"
+                class="modalBtn"
+                data-bs-toggle="modal"
+                data-bs-target="#cssModal"
+              >
+                <div class="container">
+                  <div class="row skill">
+                    <div class="col-3 skillLogo">
+                      <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="col-9 skillData">
+                      <div class="row">
+                        <div class="col-12 skillName">CSS</div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 skillStar">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="row justify-content-center skillMain">
+            <div class="col-lg-4 col-sm-12">
+              <button
+                type="button"
+                class="modalBtn"
+                data-bs-toggle="modal"
+                data-bs-target="#javascriptModal"
+              >
+                <div class="container">
+                  <div class="row skill">
+                    <div class="col-3 skillLogo">
+                      <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="col-9 skillData">
+                      <div class="row">
+                        <div class="col-12 skillName">JavaScript</div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 skillStar">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <button
+                type="button"
+                class="modalBtn"
+                data-bs-toggle="modal"
+                data-bs-target="#phpModal"
+              >
+                <div class="container">
+                  <div class="row skill">
+                    <div class="col-3 skillLogo">
+                      <i class="fab fa-php"></i>
+                    </div>
+                    <div class="col-9 skillData">
+                      <div class="row">
+                        <div class="col-12 skillName">PHP</div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 skillStar">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="row justify-content-center skillMain">
+            <div class="col-lg-4 col-sm-12">
+              <button
+                type="button"
+                class="modalBtn"
+                data-bs-toggle="modal"
+                data-bs-target="#mysqlModal"
+              >
+                <div class="container">
+                  <div class="row skill">
+                    <div class="col-3 skillLogo">
+                      <i class="fas fa-database"></i>
+                    </div>
+                    <div class="col-9 skillData">
+                      <div class="row">
+                        <div class="col-12 skillName">MySQL</div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 skillStar">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <button
+                type="button"
+                class="modalBtn"
+                data-bs-toggle="modal"
+                data-bs-target="#javaModal"
+              >
+                <div class="container">
+                  <div class="row skill">
+                    <div class="col-3 skillLogo">
+                      <i class="fab fa-java"></i>
+                    </div>
+                    <div class="col-9 skillData">
+                      <div class="row">
+                        <div class="col-12 skillName">Java</div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 skillStar">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <br />
+        <h4 class="skillsDm">Data Management & Design</h4>
+        <div class="container dmMain">
+          <div class="row dmSkillsRows justify-content-center">
+            <div class="col-12 dmSkillCol">
+              <div class="container dmSkill">
+                <div class="row dmSkillRow justify-content-center">
+                  <div class="col-3 dmLogo">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Google_Sheets_logo_%282014-2020%29.svg/1498px-Google_Sheets_logo_%282014-2020%29.svg.png"
+                      alt="Google Sheets Logo"
+                      width="40px"
+                    />
+                  </div>
+                  <div class="col-9 dmData">
+                    <div class="row dmNameRow">
+                      <div class="col-12 dmNameCol">
+                        <p>Google Sheets</p>
+                      </div>
+                    </div>
+                    <div class="row dmScoreRow">
+                      <div class="col-10 dmBarCol">
+                        <div class="progress">
+                          <div
+                            class="progress-bar sheetsBar"
+                            role="progressbar"
+                            aria-valuenow="75"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="col-2 dmScoreCol">96%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row dmSkillsRows justify-content-center">
+            <div class="col-12 dmSkillCol">
+              <div class="container dmSkill">
+                <div class="row dmSkillRow justify-content-center">
+                  <div class="col-3 dmLogo">
+                    <img
+                      src="https://datastudioymas.com/wp-content/uploads/2019/04/logo-1024x1024.png"
+                      alt="Google Data Studio Logo"
+                      width="40px"
+                    />
+                  </div>
+                  <div class="col-9 dmData">
+                    <div class="row dmNameRow">
+                      <div class="col-12 dmNameCol">
+                        <p>Google Data Studio</p>
+                      </div>
+                    </div>
+                    <div class="row dmScoreRow">
+                      <div class="col-10 dmBarCol">
+                        <div class="progress">
+                          <div
+                            class="progress-bar datastudioBar"
+                            role="progressbar"
+                            aria-valuenow="75"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="col-2 dmScoreCol">80%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row dmSkillsRows justify-content-center">
+            <div class="col-12 dmSkillCol">
+              <div class="container dmSkill">
+                <div class="row dmSkillRow justify-content-center">
+                  <div class="col-3 dmLogo">
+                    <img
+                      src="https://cdn.freebiesupply.com/logos/large/2x/figma-1-logo-png-transparent.png"
+                      alt="Figma Logo"
+                      width="40px"
+                    />
+                  </div>
+                  <div class="col-9 dmData">
+                    <div class="row dmNameRow">
+                      <div class="col-12 dmNameCol">
+                        <p>Figma</p>
+                      </div>
+                    </div>
+                    <div class="row dmScoreRow">
+                      <div class="col-10 dmBarCol">
+                        <div class="progress">
+                          <div
+                            class="progress-bar figmaBar"
+                            role="progressbar"
+                            aria-valuenow="75"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="col-2 dmScoreCol">65%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br /><br /><br />
+      <div class="container divLine">
+        <div class="row">
+          <div class="col-lg-12">
+            <hr />
+          </div>
+        </div>
+      </div>
+      <br /><br /><br />
+
+      <!-- ---------------- XXX - EXPERIENCE - XXX. ---------------- -->
+
+      <section id="exp">
+        <div class="container expMain">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="expMainTitle">Experience</h2>
+            </div>
+          </div>
+          <div class="container expMain2">
+            <div class="row expRowTitle">
+              <div class="col-3 expDot"></div>
+              <div class="col-9 expLogo">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Cognizant%27s_logo.svg/1280px-Cognizant%27s_logo.svg.png"
+                  alt="Cognizant Logo"
+                  width="150px"
+                />
+              </div>
+            </div>
+            <div class="row expRowInfo">
+              <div class="col-1 inviDot"></div>
+              <div class="col-2 verticalLine"></div>
+              <div class="col-9 infoCont">
+                <h3 class="expName">
+                  Business Intelligence Analyst:
+                  <span class="expDuration">(Dec 2020 - Now)</span>
+                </h3>
+                <p>
+                  • Analysis of KPIs, metrics and data from the different Google
+                  tools, mainly Google My Business.
+                </p>
+                <p>
+                  • Creation and updating of reports for the team and team
+                  managers.
+                </p>
+                <p>
+                  • Implementation and development of new tools for work
+                  optimization and time reduction (automation)
+                </p>
+                <h3 class="expName">
+                  Google My Business Support Agent:
+                  <span class="expDuration">(Oct 2019 - Dec 2020)</span>
+                </h3>
+                <p>
+                  • Google My Business customer service for the Spanish market
+                  through phone and email channels.
+                </p>
+                <p><i>• Best Email Writter</i> Title (2019).</p>
+              </div>
+            </div>
+            <br />
+            <div class="row expRowTitle">
+              <div class="col-3 expDot"></div>
+              <div class="col-9 expLogo">
+                <img
+                  src="https://logos-marcas.com/wp-content/uploads/2020/11/Nu-Skin-Simbolo.png"
+                  alt="Nu Skin Logo"
+                  width="150px"
+                />
+              </div>
+            </div>
+            <div class="row expRowInfo">
+              <div class="col-1 inviDot"></div>
+              <div class="col-2 verticalLine"></div>
+              <div class="col-9 infoCont">
+                <h3 class="expName">
+                  Sales Support Agent:
+                  <span class="expDuration">(Oct 2018 - Sep 2019)</span>
+                </h3>
+                <p>
+                  • Customer service, support and sale of skin care products
+                  with advice and details.
+                </p>
+                <p>• Account management of brand affiliates.</p>
+                <p>• Product shipment tracking.</p>
+              </div>
+            </div>
+            <br />
+            <div class="row expRowTitle">
+              <div class="col-3 expDot"></div>
+              <div class="col-9 expLogo">
+                <img
+                  src="http://www.activocc.com/wp-content/uploads/2017/07/logoactivo.png"
+                  alt="Activo Logo"
+                  width="150px"
+                />
+              </div>
+            </div>
+            <div class="row expRowInfo">
+              <div class="col-1 inviDot"></div>
+              <div class="col-2 verticalLine"></div>
+              <div class="col-9 infoCont">
+                <h3 class="expName">
+                  Sales Support Agent:
+                  <span class="expDuration">(Dec 2017 - Sep 2018)</span>
+                </h3>
+                <p>
+                  • Sale of telecommunications services (Cablevisión, Fibertel,
+                  Personal, Arnet and Telecom) throughout the country by phone
+                  contact.
+                </p>
+                <p>
+                  • Customer service, support, billing and agreements with
+                  customers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br /><br /><br />
+      <div class="container divLine">
+        <div class="row">
+          <div class="col-lg-12">
+            <hr />
+          </div>
+        </div>
+      </div>
+      <br /><br /><br />
+
+      <!-- ---------------- XXX - PORTFOLIO - XXX. ---------------- -->
+
+      <section id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="pfMainTitle">Portfolio</h2>
+            </div>
+          </div>
+          <div class="row spinnerRow">
+            <div class="d-flex justify-content-center">
+              <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+            <h4 class="text-center underSpinner">Coming Soon...</h4>
+          </div>
+        </div>
+      </section>
+      <br /><br /><br />
+      <div class="container divLine">
+        <div class="row">
+          <div class="col-lg-12">
+            <hr />
+          </div>
+        </div>
+      </div>
+      <br /><br /><br />
+
+      <!-- ---------------- XXX - CONTACT - XXX. ---------------- -->
+
+      <section id="contact">
+        <div class="container contactCont">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="contactMainTitle">Contact</h2>
+              <p class="contactSubtitle">Let's get in touch!</p>
+            </div>
+          </div>
+          <div class="row socialRow justify-content-center">
+            <div class="col-lg-2 col-md-4 col-sm-5 socialCol">
+              <a
+                href="https://www.instagram.com/tomitorino/"
+                target="_blank"
+                class="socialBtn"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-5 socialCol">
+              <a
+                href="https://twitter.com/tomitorino1"
+                target="_blank"
+                class="socialBtn"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-5 socialCol">
+              <a
+                href="https://www.linkedin.com/in/tom%C3%A1s-agust%C3%ADn-torino-arispe-236823165/"
+                target="_blank"
+                class="socialBtn"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-5 socialCol">
+              <a
+                href="https://github.com/tomitorino"
+                target="_blank"
+                class="socialBtn"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-5 socialCol">
+              <button
+                type="button"
+                class="modalBtn"
+                data-bs-toggle="modal"
+                data-bs-target="#emailModal"
+              >
+                <a class="socialBtn"><i class="fas fa-envelope"></i></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br /><br /><br />
+
+      <!-- ---------------- XXX - MODALS - XXX. ---------------- -->
+
+      <!-- HTML MODAL -->
+
+      <div
+        class="modal fade"
+        id="htmlModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                <i class="fab fa-html5"></i> HTML
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h3 class="modalHeader">Knowledge obtained from:</h3>
+              <ul>
+                <li>
+                  High School (via
+                  <a href="https://www.acamica.com/" target="_blank">Acamica</a
+                  >)
+                </li>
+                <li>College</li>
+                <li>Udemy</li>
+                <ul>
+                  <li>
+                    <b>The Complete 2021 Web Development Bootcamp</b> by Angela
+                    Yu
+                  </li>
+                </ul>
+              </ul>
+              <br />
+              <h3 class="modalHeader">Experience in work:</h3>
+              <ul>
+                <li>Nu Skin (Products Catalog)</li>
+                <li>Cognizant (Google Internal Projects)</li>
+              </ul>
+              <br />
+              <h3 class="modalHeader">Frameworks and tools:</h3>
+              <ul>
+                <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CSS MODAL -->
+
+      <div
+        class="modal fade"
+        id="cssModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                <i class="fab fa-css3-alt"></i> CSS
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h3 class="modalHeader">Knowledge obtained from:</h3>
+              <ul>
+                <li>College</li>
+                <li>Udemy</li>
+                <ul>
+                  <li>
+                    <b>The Complete 2021 Web Development Bootcamp</b> by Angela
+                    Yu
+                  </li>
+                </ul>
+              </ul>
+              <br />
+              <h3 class="modalHeader">Experience in work:</h3>
+              <ul>
+                <li>Nu Skin (Products Catalog)</li>
+                <li>Cognizant (Google Internal Projects)</li>
+              </ul>
+              <br />
+              <h3 class="modalHeader">Frameworks and tools:</h3>
+              <ul>
+                <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- JavaScript MODAL -->
+
+      <div
+        class="modal fade"
+        id="javascriptModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                <i class="fab fa-js-square"></i> JavaScript
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h3 class="modalHeader">Knowledge obtained from:</h3>
+              <ul>
+                <li>College</li>
+                <li>Cognizant Trainings</li>
+                <li>Udemy</li>
+                <ul>
+                  <li>
+                    <b>The Complete 2021 Web Development Bootcamp</b> by Angela
+                    Yu
+                  </li>
+                  <li>
+                    <b>
+                      The Complete JavaScript Course 2021: From Zero to
+                      Expert!</b
+                    >
+                    by Jonas Schmedtmann
+                  </li>
+                </ul>
+              </ul>
+              <br />
+              <h3 class="modalHeader">Experience in work:</h3>
+              <ul>
+                <li>Nu Skin (Products Catalog)</li>
+                <li>Cognizant (Google Internal Projects)</li>
+              </ul>
+              <br />
+              <h3 class="modalHeader">Frameworks and tools:</h3>
+              <ul>
+                <li><i class="fab fa-node-js"></i> Node.js</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHP MODAL -->
+
+      <div
+        class="modal fade"
+        id="phpModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                <i class="fab fa-php"></i> PHP
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h3 class="modalHeader">Knowledge obtained from:</h3>
+              <ul>
+                <li>College</li>
+              </ul>
+              <br />
+              <h3 class="modalHeader">Experience in work:</h3>
+              <ul>
+                <li>None yet</li>
+              </ul>
+              <br />
+              <h3 class="modalHeader">Frameworks and tools:</h3>
+              <ul>
+                <li><i class="fab fa-laravel"></i> Laravel</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MySQL MODAL -->
+
+      <div
+        class="modal fade"
+        id="mysqlModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                <i class="fas fa-database"></i> MySQL
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h3 class="modalHeader">Knowledge obtained from:</h3>
+              <ul>
+                <li>College</li>
+                <li>Cognizant Trainings</li>
+              </ul>
+              <br />
+              <h3 class="modalHeader">Experience in work:</h3>
+              <ul>
+                <li>Google Sheets (QUERY function)</li>
+                <li>Google Internal Tools</li>
+              </ul>
+              <br />
+              <h3 class="modalHeader">Frameworks and tools:</h3>
+              <ul>
+                <li><i class="fas fa-database"></i> phpMyAdmin</li>
+                <li><i class="fas fa-database"></i> MySQL Workbench</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  Java MODAL -->
+
+      <div
+        class="modal fade"
+        id="javaModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                <i class="fab fa-java"></i> Java
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h3 class="modalHeader">Knowledge obtained from:</h3>
+              <ul>
+                <li>College</li>
+                <li>Udemy</li>
+                <ul>
+                  <li>
+                    <b>The Complete Android Oreo Developer Course</b> by Rob
+                    Percival
+                  </li>
+                </ul>
+              </ul>
+              <br />
+              <h3 class="modalHeader">Experience in work:</h3>
+              <ul>
+                <li>None yet</li>
+              </ul>
+              <br />
+              <h3 class="modalHeader">Frameworks and tools:</h3>
+              <ul>
+                <li><i class="fab fa-android"></i> Android Studio</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  EMAIL MODAL -->
+
+      <div
+        class="modal fade"
+        id="emailModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                <i class="fas fa-envelope"></i> Email Me!
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body modalBodyEmail">
+              <ul>
+                <li>
+                  <a class="myMail" href="mailto:tomastorino98@gmail.com"
+                    >tomastorino98@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---------------- END - MODALS - END. ---------------- -->
+    </main>
+    <!-- ---------------- XXX - FOOTER - XXX. ---------------- -->
+    <footer>
+      <div class="container">
+        <p class="footerLine">
+          This page was created by me. Visual Studio Code and Figma were used
+          for its elaboration.
+        </p>
+        <p class="footerLine">
+          Inspired by
+          <a href="https://www.instagram.com/bedimcode/" target="_blank"
+            ><b>Bedimcode</b></a
+          >
+          designs and concepts.
+        </p>
+        <p class="footerLine">2021 - Buenos Aires, Argentina.</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/76cb14170f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+
+      var popoverTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="popover"]')
+      );
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
+      });
+    </script>
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <script>
+      const nightBtn = document.getElementById("darkToggle");
+      const body = document.getElementById("body");
+      const nav = document.getElementById("nav");
+      const moon = document.getElementById("moon");
+      var navlink = document.getElementsByClassName("nav-link");
+      var skillText = document.getElementsByClassName("skillData");
+      var expLogo = document.getElementsByClassName("expLogo");
+      var sBtn = document.getElementsByClassName("socialBtn");
+
+      function darkToggle() {
+        if (moon.classList.contains("fa-toggle-off")) {
+          moon.classList.remove("fa-toggle-off");
+          moon.classList.add("fa-toggle-on");
+          body.style.backgroundColor = "#17223B";
+          body.style.color = "#ffffff";
+          nav.style.backgroundColor = "#17223B";
+          var i;
+          for (i = 0; i < navlink.length; i++) {
+            navlink[i].style.color = "#ffffff";
+          }
+          for (i = 0; i < skillText.length; i++) {
+            skillText[i].style.color = "#2c394b";
+          }
+          for (i = 0; i < expLogo.length; i++) {
+            expLogo[i].classList.add("inverted");
+          }
+          for (i = 0; i < sBtn.length; i++) {
+            sBtn[i].style.color = "#2c394b";
+            sBtn[i].style.backgroundColor = "#ffffff";
+          }
+        } else {
+          moon.classList.remove("fa-toggle-on");
+          moon.classList.add("fa-toggle-off");
+          body.style.backgroundColor = "#ffffff";
+          body.style.color = "#17223B";
+          nav.style.backgroundColor = "#ffffff";
+          var i;
+          for (i = 0; i < navlink.length; i++) {
+            navlink[i].style.color = "#2c394b";
+          }
+          for (i = 0; i < expLogo.length; i++) {
+            expLogo[i].classList.remove("inverted");
+          }
+          for (i = 0; i < sBtn.length; i++) {
+            sBtn[i].style.color = "#ffffff";
+            sBtn[i].style.backgroundColor = "#2c394b";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,810 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #2c394b;
+}
+
+main {
+  padding-top: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+section {
+  padding: 5%;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  height: 60px;
+  width: 40px;
+  border-radius: 10px;
+  background-color: #185adb;
+  transition: 0.2s;
+  opacity: 0.3;
+}
+
+#myBtn:hover {
+  background-color: lightgray;
+  color: #185adb;
+  transition: 0.2s;
+  opacity: 1;
+}
+
+#myBtn:active {
+  transform: scale(90%);
+}
+
+/* ----------------- Nav ----------------- */
+
+.nav {
+  background-color: #ffffff;
+}
+
+.nav-link {
+  color: #2c394b;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  color: #185adb !important;
+  transform: translateY(1px);
+  transition: 0.2s;
+}
+
+.nav-link:active {
+  transform: translateY(5px);
+}
+
+.lg-view {
+  display: inline-block;
+}
+
+.sm-view {
+  display: none;
+}
+
+.moon {
+  transform: scale(150%);
+  padding-top: 4px;
+}
+
+/* ----------------- Home ----------------- */
+
+.homeMain {
+  text-align: center;
+  padding: 1%;
+}
+
+.homeMainRow {
+  padding: 1%;
+  align-items: center;
+}
+
+.homeMainText {
+  text-align: left;
+  padding: 1%;
+}
+
+.myName {
+  font-weight: bold;
+}
+
+.profilePic {
+  border-radius: 50%;
+  width: 50%;
+  height: auto;
+}
+
+.mainContactBtn {
+  background-color: #185adb;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+  padding: 3%;
+  border-radius: 30px;
+  display: inline-block;
+  transition: 0.2s;
+  width: 145px;
+}
+
+.mainContactBtn:hover {
+  color: white;
+  transform: translateY(-2px);
+  transition: 0.2s;
+  box-shadow: 1px 1px 3px #171010;
+}
+
+.mainContactBtn:active {
+  transform: translateY(2px);
+}
+
+/* ----------------- Divider ----------------- */
+
+.divLine {
+  text-align: center;
+}
+
+.divLine hr {
+  width: 30px;
+  display: inline-block;
+  border-top: dotted;
+  border-top-width: 10px;
+  border-color: #185adb;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  width: 80px;
+  background-color: transparent;
+  opacity: 0.8;
+}
+
+/* ----------------- About ----------------- */
+
+.aboutPic {
+  width: 75%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.aboutMainText {
+  text-align: left;
+}
+
+.aboutMainRow {
+  align-items: center;
+}
+
+.secTitle {
+  font-weight: bold;
+}
+
+.aboutSummaryRow {
+  padding: 5%;
+  text-align: center;
+}
+
+.summaryHead {
+  font-weight: bold;
+}
+
+.summaryText {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.dlcv {
+  background-color: #185adb;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+  padding: 3%;
+  border-radius: 30px;
+  transition: 0.2s;
+  width: 180px;
+}
+
+.dlcv:hover {
+  color: white;
+  transform: translateY(-2px);
+  transition: 0.2s;
+  box-shadow: 1px 1px 3px #171010;
+}
+
+.dlcv:active {
+  transform: translateY(2px);
+}
+
+.dropdown-menu {
+  margin: 0;
+  text-align: center;
+  border-radius: 15px;
+  width: 180px;
+}
+
+.dropdown-item {
+  border-radius: 15px;
+}
+
+.myLocation {
+  text-decoration: none;
+}
+
+/* ----------------- Skills ----------------- */
+
+.skillsMain {
+  text-align: center;
+}
+
+.skillsMainTitle {
+  font-weight: bold;
+}
+
+.skillMain {
+  padding: 2%;
+}
+
+.skill {
+  align-items: center;
+  border: solid;
+  border-width: 1px;
+  border-radius: 40px;
+  padding: 2%;
+  border-color: #d3d3d3;
+  color: #2c394b;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  transition: 0.2s;
+}
+
+.skill:hover {
+  transform: translateY(-3px);
+  transition: 0.2s;
+  /**box-shadow: 0.5px 0.5px 5px 2px rgb(168, 168, 168);**/
+}
+
+.skillLogo {
+  font-size: 48px;
+}
+
+.skillName {
+  font-weight: 500;
+  text-align: left;
+}
+.skillStar {
+  text-align: left;
+}
+
+.fa-html5 {
+  color: #2c394b;
+}
+
+.skillLink {
+  text-decoration: none;
+  color: #2c394b;
+}
+
+.fa-css3-alt {
+  color: #2c394b;
+}
+
+.fa-js-square {
+  color: #2c394b;
+}
+
+.fa-php {
+  color: #2c394b;
+}
+
+.fa-database {
+  color: #2c394b;
+}
+
+.fa-java {
+  color: #2c394b;
+}
+
+/* ----------------- Skills: Data Management ----------------- */
+
+.skillsDm {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.dmMain {
+  padding: 5%;
+}
+
+.dmSkillsRows {
+  margin-bottom: 5%;
+}
+
+.dmSkillRow {
+  text-align: center;
+  align-items: center;
+}
+
+.dmSkillCol {
+  max-width: 60%;
+}
+
+.dmScoreRow {
+  align-items: center;
+}
+
+.dmLogo {
+  text-align: right;
+}
+
+.dmData {
+  text-align: left;
+}
+
+.dmSkillCol p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.progress {
+  border-radius: 30px;
+}
+
+.sheetsBar {
+  width: 96%;
+  background-color: #0f9d58;
+  border-radius: 30px;
+}
+
+.datastudioBar {
+  width: 80%;
+  background-color: #4285f4;
+  border-radius: 30px;
+}
+
+.figmaBar {
+  width: 65%;
+  background-color: #ee5f56;
+  border-radius: 30px;
+}
+
+/* ----------------- Experience ----------------- */
+
+.expMainTitle {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 5%;
+}
+
+.expMain2 {
+  padding: 5%;
+  width: 85%;
+}
+
+.expDot {
+  width: 40px;
+  height: 40px;
+  background-color: #185adb;
+  border-radius: 30px;
+}
+
+.expName {
+  margin-top: 1%;
+}
+
+.inviDot {
+  width: 20px;
+  height: 20px;
+  padding-right: 0;
+}
+
+.verticalLine {
+  width: 20px;
+  border-left: solid;
+  border-width: 2px;
+  border-color: lightgray;
+}
+
+.expRowInfo {
+  padding-top: 3%;
+}
+
+.expRowTitle {
+  align-items: center;
+}
+
+.expName {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.expDuration {
+  font-weight: 500;
+}
+
+.inverted {
+  filter: brightness(0) invert(1);
+}
+
+/* ----------------- Portfolio ----------------- */
+
+.pfMainTitle {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 5%;
+}
+
+.spinnerRow {
+  padding: 10%;
+}
+
+.underSpinner {
+  padding-top: 3%;
+  font-weight: 600;
+}
+
+/* ----------------- Contact ----------------- */
+
+.contactCont {
+  text-align: center;
+}
+
+.contactMainTitle {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 5%;
+}
+
+.socialRow {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.socialBtn {
+  background-color: #2c394b;
+  color: #ffffff;
+  padding: 4%;
+  border-radius: 10px;
+  font-size: 32px;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  transition: 0.2s;
+}
+
+.socialBtn:hover {
+  transform: translateY(-10px);
+  transition: 0.2s;
+  color: white;
+}
+
+.socialBtn:active {
+  transform: translateY(5px);
+  transition: 0.1s;
+  transform: scale(75%);
+}
+
+.contactSubtitle {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.myMail {
+  text-decoration: none;
+  color: #185adb;
+}
+
+.myMail:hover {
+  color: rgb(63, 167, 63);
+}
+
+.modalBodyEmail {
+  padding: 6%;
+}
+
+/* ----------------- Footer ----------------- */
+
+footer {
+  background-color: #2c394b;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  padding: 5%;
+}
+
+.footerLine a {
+  text-decoration: none;
+  color: lightblue;
+}
+
+.footerLine a:hover {
+  text-decoration: underline;
+}
+
+/* ----------------- Modals ----------------- */
+
+.modalBtn {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+}
+
+.modalHeader {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c394b;
+}
+
+.modal-title {
+  color: #2c394b;
+}
+
+.modal-content li {
+  color: #2c394b;
+}
+
+/* ----------------- Media Queries ----------------- */
+
+@media only screen and (max-width: 1440px) {
+  main {
+    padding-top: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+
+@media only screen and (max-width: 1360px) {
+  main {
+    padding-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main {
+    padding-top: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  #skills {
+    padding: 0;
+  }
+
+  .skillsMain {
+    padding: 0px;
+  }
+
+  .skillMain {
+    padding: 2%;
+  }
+
+  .skillsMainTitle {
+    margin-top: 10%;
+  }
+
+  .skill {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+
+  .aboutPic {
+    width: 85%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .profilePic {
+    border-radius: 50%;
+    width: 50%;
+    height: auto;
+  }
+
+  .homeMain {
+    text-align: center;
+    padding: 4%;
+    margin-top: 5%;
+  }
+
+  .homeMainText {
+    text-align: center;
+    padding: 5%;
+  }
+
+  .aboutMainText {
+    text-align: center;
+  }
+
+  .aboutPic {
+    display: none;
+  }
+
+  .cvRow {
+    justify-content: center;
+  }
+
+  .skillMain .col-sm-12 {
+    padding: 5%;
+  }
+
+  .skillMain {
+    padding: 0;
+  }
+
+  .skillsMain {
+    text-align: center;
+    width: 50%;
+  }
+  .dmSkillCol {
+    max-width: 80%;
+  }
+
+  .skillsMainTitle {
+    margin-top: 15%;
+  }
+
+  .secTitle {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 592px) {
+  .nav {
+    justify-content: center !important;
+  }
+  .nav-link {
+    font-size: 36px;
+  }
+
+  .lg-view {
+    display: none;
+  }
+
+  .sm-view {
+    display: inline-block;
+  }
+
+  .skillsMain {
+    width: 80%;
+  }
+
+  .dmNameCol p {
+    font-size: 16px;
+  }
+
+  .socialRow {
+    padding: 2%;
+  }
+
+  .socialCol {
+    width: 30%;
+    margin: 3%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    margin-top: 15%;
+  }
+
+  .profilePic {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+  }
+
+  .homeMain {
+    text-align: center;
+    padding: 4%;
+    margin-top: 30%;
+  }
+
+  .homeMainText {
+    text-align: center;
+    padding: 5%;
+  }
+
+  .lg-view {
+    display: none;
+  }
+
+  .sm-view {
+    display: inline-block;
+  }
+
+  .aboutPic {
+    display: none;
+  }
+  .cvRow {
+    justify-content: center;
+  }
+
+  .dmNameCol p {
+    font-size: 14px;
+  }
+
+  .infoCont p {
+    font-size: 12px;
+  }
+
+  .infoCont h3 {
+    font-size: 14px;
+  }
+
+  .expMain {
+    padding: 0;
+  }
+
+  .expMain2 {
+    padding: 0;
+    padding-top: 5%;
+  }
+
+  .socialRow {
+    padding: 2%;
+  }
+
+  .socialCol {
+    width: 30%;
+    margin: 3%;
+  }
+
+  .secTitle {
+    margin-top: 50%;
+  }
+
+  .skillsMainTitle {
+    margin-top: 60%;
+  }
+
+  .expMainTitle {
+    margin-top: 45%;
+  }
+
+  .pfMainTitle {
+    margin-top: 50%;
+  }
+
+  .contactMainTitle {
+    margin-top: 50%;
+  }
+
+  .myName {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  body {
+    margin-top: 15%;
+  }
+
+  .homeMain {
+    text-align: center;
+    padding: 4%;
+    margin-top: 50%;
+  }
+
+  .skillsMain {
+    width: 100%;
+  }
+
+  .dmSkillCol {
+    max-width: 100%;
+  }
+
+  .dmNameCol p {
+    font-size: 14px;
+  }
+
+  .secTitle {
+    margin-top: 60%;
+  }
+
+  .skillsMainTitle {
+    margin-top: 55%;
+  }
+
+  .expMainTitle {
+    margin-top: 50%;
+  }
+
+  .pfMainTitle {
+    margin-top: 55%;
+  }
+
+  .contactMainTitle {
+    margin-top: 40%;
+  }
+}
+
+/* ----------------- xxxxxxxxxx ----------------- */

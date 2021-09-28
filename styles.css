@@ -356,6 +356,22 @@ section {
   border-radius: 30px;
 }
 
+/* ----------------- Skills: Data Management ----------------- */
+
+.skillsLp {
+  width: 60%;
+  padding: 3%;
+}
+
+.skillsLp li {
+  padding: 3%;
+}
+
+.lpSubtitle {
+  text-align: center;
+  font-size: 12px;
+}
+
 /* ----------------- Experience ----------------- */
 
 .expMainTitle {

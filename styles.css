@@ -356,7 +356,7 @@ section {
   border-radius: 30px;
 }
 
-/* ----------------- Skills: Data Management ----------------- */
+/* ----------------- Skills: Learning Paths ----------------- */
 
 .skillsLp {
   width: 60%;
@@ -776,6 +776,11 @@ footer {
 
   .myName {
     margin-top: 10%;
+  }
+
+  .skillsLp {
+    width: 100%;
+    padding: 3%;
   }
 }
 

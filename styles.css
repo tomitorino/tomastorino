@@ -339,19 +339,19 @@ section {
 }
 
 .sheetsBar {
-  width: 96%;
+  width: 98%;
   background-color: #0f9d58;
   border-radius: 30px;
 }
 
 .datastudioBar {
-  width: 80%;
+  width: 85%;
   background-color: #4285f4;
   border-radius: 30px;
 }
 
 .figmaBar {
-  width: 65%;
+  width: 75%;
   background-color: #ee5f56;
   border-radius: 30px;
 }
